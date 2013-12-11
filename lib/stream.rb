@@ -8,8 +8,10 @@ class Flower::Stream
   end
 
   def start
+    puts stream_url
     source = EventMachine::EventSource.new(stream_url, nil, request_headers)
     source.message do |message|
+      puts message
       parser << message
     end
 
@@ -50,6 +52,7 @@ class Flower::Stream
   end
 
   def stream_url
-    "https://stream.flowdock.com/flows?active=true&filter=#{Flower::Config.flows.join(',')}"
+    # "https://stream.flowdock.com/flows?active=true&filter=#{Flower::Config.flows.join(',')}"
+    "https://stream.flowdock.com/flows/#{Flower::Config.company}/bot"
   end
 end
