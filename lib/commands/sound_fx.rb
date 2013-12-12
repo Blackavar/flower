@@ -3,7 +3,7 @@ require_relative 'sound_command'
 class SoundFx < SoundCommand
   respond_to "easy", "rimshot", "sad", "yeah", "applause", "bomb",
     "suprise", "snore", "godwillsit", "sting",
-    "khan", "khan?", "tarelugnt", "tadetlugnt", "judas", "priest",
+    "khan", "khan?", "judas", "priest",
     "fascinating", "party", "tihi", "merikuh", "team", "gott", "bigbang", "itsatrap"
 
   def self.description
@@ -31,7 +31,7 @@ class SoundFx < SoundCommand
     when "godwillsit"
       play_file "soundfx/godwillsit.m4a"
     when "party"
-      play_file "soundfx/notgettingin.mp3"!
+      play_file "soundfx/notgettingin.mp3"
     when "tihi"
       play_file "soundfx/tihi.mp3"
     when "sting"
@@ -40,10 +40,6 @@ class SoundFx < SoundCommand
       play_file "soundfx/khan.wav"
     when "khan?"
       play_file "soundfx/khan.wav"
-    when "tarelugnt"
-      play_file "soundfx/tadetlugnt.wav"
-    when "tadetlugnt"
-      play_file "soundfx/tadetlugnt.wav"
     when /judas|priest/
       play_file "judas/judas#{rand(25)+1}.mp3"
     when "fascinating"
