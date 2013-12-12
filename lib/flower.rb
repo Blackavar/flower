@@ -48,7 +48,7 @@ class Flower
 
       message.flower = self
       message.rest = rest
-      Thread.exit if !message.sender # Don't break when the mnd CLI tool is posting to chat
+      # Thread.exit if !message.sender # Don't break when the mnd CLI tool is posting to chat
       output = nil
       message.messages.each do |sub_message|
         sub_message.argument = output if output.present?
