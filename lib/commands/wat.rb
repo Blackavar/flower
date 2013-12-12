@@ -15,6 +15,9 @@ class Wat < Flower::Command
     http://i.imgur.com/aGZxe.jpg
     http://img1.joyreactor.com/pics/post/funny-pictures-auto-panda-muscles-389021.jpeg
     http://25.media.tumblr.com/tumblr_mbqhqcQOlN1rhdfk0o1_500.jpg
+    http://stream1.gifsoup.com/view/764483/wat-o.gif
+    http://images4.wikia.nocookie.net/__cb20120424042021/glee/images/0/09/Wat_buffy.gif
+    http://images3.wikia.nocookie.net/__cb20131019192458/thehungergames/images/a/a5/Wat.gif
   ]
 
   def self.description
