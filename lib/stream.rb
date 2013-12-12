@@ -52,7 +52,6 @@ class Flower::Stream
   end
 
   def stream_url
-    # "https://stream.flowdock.com/flows?active=true&filter=#{Flower::Config.flows.join(',')}"
-    "https://stream.flowdock.com/flows/#{Flower::Config.company}/bot"
+    "https://stream.flowdock.com/flows?active=true&filter=#{Flower::Config.flows.join(',')}"
   end
 end
