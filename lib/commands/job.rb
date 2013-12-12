@@ -2,7 +2,7 @@
 require_relative 'sound_command'
 class Job < SoundCommand
   respond_to "jerbs"
-  listen_to /[^!]job/i
+  listen_to /[^!]jerb/i
 
   FILES = Dir.glob("extras/jobs/*.mp3").map{|f| f.gsub("extras/","")}
 
