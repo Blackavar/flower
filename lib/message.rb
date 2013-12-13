@@ -114,7 +114,7 @@ class Flower::Message
 
   def serialize
     {
-      from: @sender,
+      from: self.user_id,
       reply_to: self.reply_to,
       flow: self.flow,
       content: self.message
