@@ -118,7 +118,7 @@ class Flower::Message
       reply_to: self.reply_to,
       flow: self.flow,
       content: self.message
-    }.to_json
+    }
   end
 
   def say(reply, options = {})
