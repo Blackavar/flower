@@ -60,7 +60,7 @@ class Flower::Stats
       "You can do better #{nick}.",
       "Why the sad face, #{nick}?",
       "You are not looking too good #{nick}.",
-      "Loooser #{nick}!",
+      "Loser #{nick}!",
       "You are losing it, #{nick}!",
       "SAY SOMETHING #{nick}!?",
       "Are you dead #{nick}?"
