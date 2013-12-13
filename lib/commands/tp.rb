@@ -13,11 +13,7 @@ class Tp < Flower::Command
     "TP!"
   end
 
-  def self.respond(message)
-    if (1..TP.size).include?(message.argument.to_i)
-      message.say TP[message.argument.to_i - 1]
-    else
-      message.say TP.sample
-    end
+  def self.listen(message)
+    message.say TPS.sample
   end
 end
