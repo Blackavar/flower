@@ -112,6 +112,15 @@ class Flower::Message
     end
   end
 
+  def serialize
+    {
+      from: @sender,
+      reply_to: self.reply_to,
+      flow: self.flow,
+      content: self.message
+    }.to_json
+  end
+
   def say(reply, options = {})
     reply = reply.respond_to?(:join) ? reply.join("\n") : reply
     @output = reply

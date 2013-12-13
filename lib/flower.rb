@@ -9,6 +9,7 @@ require 'thin'
 
 class Flower
   require File.expand_path(File.join(File.dirname(__FILE__), 'message'))
+  require File.expand_path(File.join(File.dirname(__FILE__), 'queues'))
   require File.expand_path(File.join(File.dirname(__FILE__), 'stream'))
   require File.expand_path(File.join(File.dirname(__FILE__), 'rest'))
   require File.expand_path(File.join(File.dirname(__FILE__), 'command'))
