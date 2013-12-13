@@ -50,7 +50,7 @@ class Flower::Stats
 
   def self.play_random_sound
     sound = ["soundfx/easy.mp3", "soundfx/rimshot.mp3", "soundfx/sadtrombone.mp3", "soundfx/yeah.mp3",
-      "soundfx/applause.mp3", "soundfx/bomb.mp3", "soundfx/suprise.m4r", "soundfx/godwillsit.m4a"].sample
+      "soundfx/applause.mp3", "soundfx/bomb.mp3", "soundfx/godwillsit.m4a"].sample
     Thread.new { SoundCommand.play_file(sound) }
   end
 
