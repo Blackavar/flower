@@ -17,6 +17,10 @@ class Straya < Flower::Command
     http://memecrunch.com/meme/EGA6/straya/image.png
     http://images.cdn.bigcartel.com/bigcartel/product_images/89885786/max_h-1000+max_w-1000/StrayaBack_700.jpg
     https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-frc3/p480x480/1471887_204969193024593_1198559900_n.jpg
+    http://images.smh.com.au/2013/03/20/4124148/giantcroc-620x349.jpg
+    http://resources1.news.com.au/images/2013/11/23/1226766/938517-mauricio-ruiz-barroso.jpg
+    http://4.bp.blogspot.com/-DIVKHSSv2pg/Uih38K2VL3I/AAAAAAAAABs/X7fNs6gTzTE/s400/NT+News+5-9-13+page+1.jpg
+    http://resources1.news.com.au/images/2013/11/27/1226769/393333-santa-fun-run.jpg
   ]
 
   def self.description
