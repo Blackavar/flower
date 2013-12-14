@@ -42,7 +42,7 @@ class Flower::Stream
     @parser = Yajl::Parser.new(:symbolize_keys => true)
     @parser.on_parse_complete = proc do |data|
       message = Flower::Message.new(data)
-      Resque.enqueue(Flower::Queues::RawMessage,message.serialize)
+      Resque.enqueue(Flower::Queues::RawMessage,message.data)
       flower.respond_to(message) if message.respond?
     end
     @parser

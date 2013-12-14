@@ -112,16 +112,6 @@ class Flower::Message
     end
   end
 
-  def serialize
-    {
-      from: self.user_id,
-      reply_to: self.reply_to,
-      flow: self.flow,
-      timestamp: Time.now.iso8601,
-      content: content
-    }
-  end
-
   def say(reply, options = {})
     reply = reply.respond_to?(:join) ? reply.join("\n") : reply
     @output = reply
