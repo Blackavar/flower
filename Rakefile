@@ -1,4 +1,7 @@
 # encoding: UTF-8
+require_relative 'lib/queues'
+require 'resque/tasks'
+
 task :spec do
   require 'rspec/core/rake_task'
   RSpec::Core::RakeTask.new
