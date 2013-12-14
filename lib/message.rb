@@ -117,7 +117,8 @@ class Flower::Message
       from: self.user_id,
       reply_to: self.reply_to,
       flow: self.flow,
-      content: self.message
+      timestamp: Time.now.iso8601,
+      content: content
     }
   end
 

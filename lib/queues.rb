@@ -9,11 +9,12 @@ class Flower
 
       def self.perform(message)
         puts "dequeueing"
+        puts "Timestamp: #{message['timestamp']}"
         puts "From: #{message['from']}"
         puts "Reply to: #{message['reply_to']}"
         puts "Flow: #{message['flow']}"
         puts "Content: #{message['content']}"
-        sleep 1
+        # sleep 1
       end
     end
   end
