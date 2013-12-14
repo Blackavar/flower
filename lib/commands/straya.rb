@@ -1,5 +1,5 @@
 class Straya < Flower::Command
-  listen_to /straya|[Aa]ustralia/i
+  listen_to /straya|australia/i
 
   STRAYA = %w[
     http://sphotos-b.ak.fbcdn.net/hphotos-ak-ash3/643913_358178277603215_239658601_n.jpg
